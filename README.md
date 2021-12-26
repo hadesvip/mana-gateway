@@ -21,6 +21,8 @@
     |--mana-console
     |--mana-core
     |--mana-discovery 
+      |--mana-discovery-api
+      |--mana-discovery-etcd
 ```
 
 
