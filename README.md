@@ -28,5 +28,5 @@
 
 ## 系统架构
 
-![image-20211226225309588](C:\Users\wangyong\AppData\Roaming\Typora\typora-user-images\image-20211226225309588.png)
+![image-20211226225309588](docs/系统架构.png)
 
