@@ -31,6 +31,7 @@
     <fastjson.verson>1.2.76</fastjson.verson>
     <jsonpath.version>2.4.0</jsonpath.version>
     <kafka.version>2.3.1</kafka.version>
+    <mana.version>1.0</mana.version>
   </properties>
 
   <dependencyManagement>
@@ -180,6 +181,43 @@
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${junit.version}</version>
+      </dependency>
+
+      <!--modules-->
+      <dependency>
+        <groupId>com.kevin</groupId>
+        <artifactId>mana-dependencies</artifactId>
+        <version>${mana.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.kevin</groupId>
+        <artifactId>mana-common</artifactId>
+        <version>${mana.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.kevin</groupId>
+        <artifactId>mana-core</artifactId>
+        <version>${mana.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.kevin</groupId>
+        <artifactId>mana-client</artifactId>
+        <version>${mana.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.kevin</groupId>
+        <artifactId>mana-discovery</artifactId>
+        <version>${mana.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.kevin</groupId>
+        <artifactId>mana-discovery-api</artifactId>
+        <version>${mana.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.kevin</groupId>
+        <artifactId>mana-discovery-etcd</artifactId>
+        <version>${mana.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

@@ -14,4 +14,11 @@
   <name>mana-core</name>
   <version>${revision}</version>
   <packaging>jar</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.kevin</groupId>
+      <artifactId>mana-common</artifactId>
+    </dependency>
+  </dependencies>
 </project>

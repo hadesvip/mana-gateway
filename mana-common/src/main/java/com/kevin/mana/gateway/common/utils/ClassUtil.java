@@ -264,7 +264,7 @@ public class ClassUtil {
       } else if (genericClass != null) {
         return (Class<?>) genericClass;
       }
-    } catch (Throwable e) {
+    } catch (Throwable ignored) {
     }
     if (cls.getSuperclass() != null) {
       return getGenericClass(cls.getSuperclass(), i);
