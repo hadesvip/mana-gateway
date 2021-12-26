@@ -4,14 +4,16 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>mana-gateway</artifactId>
+    <artifactId>mana-discovery</artifactId>
     <groupId>com.kevin</groupId>
     <version>1.0</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>mana-core</artifactId>
-  <name>mana-core</name>
+  <artifactId>mana-discovery-etcd</artifactId>
+  <name>mana-discovery-etcd</name>
   <version>${revision}</version>
   <packaging>jar</packaging>
+
+
 </project>

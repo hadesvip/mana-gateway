@@ -7,10 +7,33 @@
     <artifactId>mana-gateway</artifactId>
     <groupId>com.kevin</groupId>
     <version>1.0</version>
+    <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-
   <artifactId>mana-discovery</artifactId>
-
   <name>mana-discovery</name>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <revision>1.0</revision>
+  </properties>
+
+  <modules>
+    <module>mana-discovery-api</module>
+    <module>mana-discovery-etcd</module>
+  </modules>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
