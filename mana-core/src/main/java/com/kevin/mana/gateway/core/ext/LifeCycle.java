@@ -1,4 +1,4 @@
-package com.kevin.mana.gateway.core;
+package com.kevin.mana.gateway.core.ext;
 
 /**
  * 生命周期

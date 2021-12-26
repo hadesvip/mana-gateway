@@ -1,6 +1,6 @@
 package com.kevin.mana.gateway.core.netty;
 
-import com.kevin.mana.gateway.core.LifeCycle;
+import com.kevin.mana.gateway.core.ext.LifeCycle;
 
 /**
  * @author kevin

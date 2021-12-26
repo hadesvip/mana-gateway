@@ -50,7 +50,7 @@ public class GatewayConfiguration {
   /**
    * 是否开启EPOLL
    */
-  private Boolean useEPoll = true;
+  private Boolean useEpoll = true;
 
   /**
    * 是否开启Netty内存分配机制
