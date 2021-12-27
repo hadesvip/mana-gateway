@@ -50,11 +50,12 @@ public class NettyHttpServer implements LifeCycle {
     return configuration.getUseEpoll() && RemotingUtil.isLinuxPlatform() && Epoll.isAvailable();
   }
 
-  public NettyHttpServer(GatewayConfiguration configuration) {
+  public NettyHttpServer(GatewayConfiguration configuration,NettyProcessor nettyProcessor) {
     this.configuration = configuration;
     if (configuration.getPort() > 0 && configuration.getPort() < 65535) {
       this.port = configuration.getPort();
     }
+    this.nettyProcessor = nettyProcessor;
     //初始化nettyHttpServer
     this.init();
   }
