@@ -26,6 +26,7 @@
     <module>mana-client</module>
     <module>mana-discovery</module>
     <module>mana-console</module>
+    <module>mana-web</module>
   </modules>
 
   <dependencyManagement>
