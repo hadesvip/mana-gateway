@@ -17,7 +17,6 @@ import io.netty.channel.epoll.EpollEventLoopGroup;
 import io.netty.channel.epoll.EpollServerSocketChannel;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.codec.http.HttpContentDecoder;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpServerCodec;
 import io.netty.handler.codec.http.HttpServerExpectContinueHandler;
@@ -50,7 +49,7 @@ public class NettyHttpServer implements LifeCycle {
     return configuration.getUseEpoll() && RemotingUtil.isLinuxPlatform() && Epoll.isAvailable();
   }
 
-  public NettyHttpServer(GatewayConfiguration configuration,NettyProcessor nettyProcessor) {
+  public NettyHttpServer(GatewayConfiguration configuration, NettyProcessor nettyProcessor) {
     this.configuration = configuration;
     if (configuration.getPort() > 0 && configuration.getPort() < 65535) {
       this.port = configuration.getPort();

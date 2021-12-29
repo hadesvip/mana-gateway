@@ -23,7 +23,7 @@ public class NettyCoreProcessor implements NettyProcessor {
     ChannelHandlerContext ctx = httpRequestWrapper.getCtx();
     FullHttpRequest fullHttpRequest = httpRequestWrapper.getFullHttpRequest();
 
-    
+
 
 
   }
